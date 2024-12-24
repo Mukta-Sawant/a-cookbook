@@ -1,0 +1,370 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f3f3f3;
+  background-image: url(../public/lukas-blazek-f-TWhXOrLiU-unsplash.jpg);
+  background-size: cover; /* Ensures the image covers the entire viewport */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  height: 150vh; /* Makes sure body height matches the viewport height */
+  margin: 0; /* Removes default margin */
+  /* padding: 0; */
+  /* width: 100%; */
+}
+
+.App {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 30px;
+  /* height: 95vh; */
+  text-align: center;
+}
+
+.container-title {
+  text-align: center;
+  position: relative;
+  top: 10%;
+  left: 0%;
+  /* z-index: 100; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px;
+  width: 80%;
+}
+
+.container-title h1 {
+  margin-top: 5rem;
+}
+
+.container-title p {
+  font-size: 1rem;
+  margin-bottom: 0.9rem;
+  width: 55%;
+  color: #552b5b;
+  font-weight: 600;
+}
+
+.container-title input {
+  width: 60%;
+  max-width: 400px;
+  padding: 10px;
+  margin-bottom: 1rem;
+  /* margin-left: 36%; */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container-title button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #ffa500;
+  color: white;
+  border: none;
+  /* border-radius: 5px; */
+  cursor: pointer;
+  width: 15%;
+  /* margin: 1rem 0; */
+}
+
+.container-title button:hover {
+  background-color: #552b5b;
+  color: #f8f4ea;
+}
+
+.container-title .recipe-data {
+  margin-top: 40px;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  /* flex-wrap: wrap; */
+  gap: 5px;
+}
+
+    /* Navbar Styles */
+    .navbar {
+      /* margin: 1rem; */
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #f8f4ea;
+      padding: 10px 20px;
+      color: #552b5b;
+      cursor: pointer;
+      width: 100%;
+      /* padding:; */
+      position: fixed;
+      top: 0%;
+      left: 0%;
+      z-index: 1000;
+    }
+
+    .navbar .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .navbar .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin-right: 2rem;
+    }
+
+    .navbar .nav-links li {
+      display: inline;
+      margin: 0.5rem;
+    }
+
+    .navbar .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: color 0.3s;
+    }
+
+    .navbar .nav-links a:hover {
+      color: #ddd;
+    }
+
+section {
+  margin: 2rem 0 1rem 0;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+input {
+  text-align: center;
+  align-items: center;
+  display: flex; 
+  flex-direction: column;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  background-color: #f8f4ea;
+  border: none;
+}
+
+button {
+  /* width: 100%; */
+  padding: 0.5rem 1rem;
+  background-color: #f8f4ea;
+  color: #f4901d;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+ }
+
+button:hover {
+  background-color: #f4901d;
+  color: #f8f4ea;
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #552b5b;
+  font-style: normal;
+  font-size: 1.7rem;
+}
+
+h2 {
+  color: #552b5b;
+}
+
+.main-title {
+  text-align: center;
+  color: #552b5b;
+  font-family: 'Dancing Script';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 77px;
+}
+
+
+.nutrients ul {
+  display: flex;
+  width: 35rem;
+  justify-content: space-evenly;
+}
+
+.meals {
+  display: flex;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;  
+}
+
+img {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  margin: 0 1rem;
+  max-width: 300px;
+  box-shadow: 0 4px 8px 2px rgba(77, 77, 77, 0.15);
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+}
+
+.instructions {
+  font-size: 0.9rem;
+  /* margin-bottom: 1rem; */
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  color: #552b5b;
+  font-weight: bold;
+  font-size: medium;
+  /* text-align: center; */
+}
+
+.App-header {
+  margin-top: 5rem;
+}
+
+.meal-card {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  /* margin-top: 0.2rem; */
+}
+
+.instructions li.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.recipe-container {
+  display: grid;
+  padding: 0.5rem 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  /* background-color: #f8f4ea;
+  color: #f4901d; */
+  text-decoration: none;
+  border-radius: 4px;
+  text-align: center; 
+}
+
+.recipe-title {
+  color: #552b5b;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  background-color: #f4901d;
+  color: #f8f4ea;
+  width: fit-content;  
+  padding: 0.5rem 1rem; 
+}
+
+a:hover {
+  background-color: #552b5b;
+  color: #f8f4ea;
+  cursor: pointer;
+}  
+
+.recipe-Ingredients {
+  display: flex;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;  
+}
+
+.recipe-details {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.recipe-details li {
+  margin: 0.2rem 0;
+}
+
+.recipe-link {
+  background-color: #f4901d;
+  color: #f8f4ea;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  width: fit-content;
+}
+
+.recipe-link:hover {
+  background-color: #552b5b;
+  color: #f8f4ea;
+}
+
+@media only screen and (max-width: 1024px) {
+  .meals {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nutrients ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+/* Add responsive styling */
+@media only screen and (max-width: 1024px) {
+  .recipe-container {
+    grid-template-columns: 1fr;
+    margin-top: 150%;
+  }
+
+  .recipe-item {
+    max-width: 400px;
+    margin: 0 auto 2rem auto;
+  }
+}
+
+/* @media only screen and (max-width: 1024px) {
+  .recipe-data {
+    max-width: 400px;
+    /* margin: 0 auto 2rem auto; */
+  /* } */
+/* } */ 
