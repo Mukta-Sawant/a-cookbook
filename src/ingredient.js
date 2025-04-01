@@ -3,8 +3,10 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './Navbar';
 import MealList from "./MealList";
 import axios from 'axios';
-import RecipeList from './reciepe';
+// import RecipeList from './reciepe';
+import EnhancedRecipeList from './EnhancedRecipeList';
 import CalorieSearch from './CalorieSearch';
+
 
 function Ingredient() {
   const [ingredients, setIngredients] = useState('');
@@ -42,7 +44,8 @@ const fetchRecipes = async () => {
                 />
                 <button onClick={fetchRecipes}>Find Recipes</button>
                 <div className='recipe-data'>
-                <RecipeList recipeData={recipes} />
+                {/* <RecipeList recipeData={recipes} /> */}
+                <EnhancedRecipeList recipeData={recipes} />
                 </div>
             </div> 
           </div>

@@ -1,0 +1,293 @@
+/* CommunityFeatures.css */
+
+/* Recipe Community Item */
+.community-recipe-item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+    
+  /* Username Prompt for Recipe */
+  .username-prompt-recipe {
+    padding: 1rem;
+    background-color: #f8f4ea;
+    border-radius: 8px;
+    margin: 1rem 0;
+    text-align: center;
+  }
+    
+  .username-prompt-recipe h4 {
+    color: #552b5b;
+    margin-bottom: 0.5rem;
+  }
+    
+  .username-prompt-recipe p {
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+  }
+    
+  .username-prompt-recipe form {
+    display: flex;
+    gap: 0.5rem;
+  }
+    
+  .username-prompt-recipe .username-input {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+    
+  .username-prompt-recipe .username-submit-btn {
+    background-color: #f4901d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+    
+  .username-prompt-recipe .username-submit-btn:hover {
+    background-color: #552b5b;
+  }
+    
+  /* Recipe Rating Section */
+  .recipe-rating-section {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+    
+  /* Current Rating */
+  .current-rating {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+    
+  .recipe-stars {
+    display: flex;
+    align-items: center; /* Ensure stars are aligned vertically */
+    gap: 0.25rem; /* Adjust the space between stars */
+  }
+    
+  /* Star Button Styling - MERGED DEFINITIONS */
+  .star-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: transform 0.2s ease, filter 0.2s ease;
+    font-size: 1.5rem; /* Set a fixed font size for the stars */
+  }
+    
+  /* Hover Effect */
+  .star-btn:hover {
+    transform: scale(1.2); /* Slightly enlarge on hover */
+    filter: brightness(1.2); /* Slight brightening on hover */
+    background: none;
+  }
+    
+  /* Active State (Selected Star) */
+  .star-btn.active {
+    transform: scale(1.1); /* Slightly smaller than hover state */
+    filter: brightness(1.3); /* Make the active star brighter */
+  }
+    
+  /* Rating Number */
+  .rating-number {
+    font-weight: bold;
+    color: #552b5b;
+  }
+    
+  /* Rating Count */
+  .rating-count {
+    font-size: 0.8rem;
+    color: #666;
+  }
+    
+  /* No Ratings Yet Text */
+  .no-ratings {
+    font-style: italic;
+    color: #666;
+    font-size: 0.9rem;
+  }
+    
+  /* User Rating Section */
+  .user-rating {
+    margin-top: 0.5rem;
+  }
+    
+  .user-rating p {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: #552b5b;
+  }
+    
+  .star-rating {
+    display: flex;
+    gap: 0.25rem;
+  }
+    
+  /* Comments Section */
+  .recipe-comments-section {
+    margin-top: 1rem;
+    border-top: 1px solid #eee;
+    padding-top: 1rem;
+  }
+    
+  .toggle-comments-btn {
+    background-color: #f8f4ea;
+    color: #552b5b;
+    border: 1px solid #552b5b;
+    padding: 0.5rem;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s;
+    margin-bottom: 1rem;
+  }
+    
+  .toggle-comments-btn:hover {
+    background-color: #552b5b;
+    color: #f8f4ea;
+  }
+    
+  .comments-container {
+    animation: fadeIn 0.3s ease-in-out;
+  }
+    
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+    
+  .comment-form {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+    
+  .comment-input {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+    
+  .comment-submit-btn {
+    background-color: #f4901d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+    
+  .comment-submit-btn:hover {
+    background-color: #552b5b;
+  }
+    
+  .comment-submit-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+    
+  .comments-list {
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #eee;
+    border-radius: 4px;
+  }
+    
+  .comment-item {
+    padding: 0.75rem;
+    border-bottom: 1px solid #eee;
+  }
+    
+  .comment-item:last-child {
+    border-bottom: none;
+  }
+    
+  .comment-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+  }
+    
+  .comment-author {
+    font-weight: bold;
+    color: #552b5b;
+  }
+    
+  .comment-date {
+    color: #666;
+  }
+    
+  .comment-text {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+    
+  .no-comments {
+    padding: 1rem;
+    text-align: center;
+    color: #666;
+    font-style: italic;
+  }
+    
+  /* Live Update Indicator */
+  .live-indicator {
+    display: inline-flex;
+    align-items: center;
+    font-size: 0.8rem;
+    color: #552b5b;
+    margin-top: 0.5rem;
+  }
+    
+  .live-indicator::before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background-color: #10b981;
+    border-radius: 50%;
+    margin-right: 0.25rem;
+    animation: pulse 2s infinite;
+  }
+    
+  @keyframes pulse {
+    0% {
+      opacity: 0.5;
+      transform: scale(0.8);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.2);
+    }
+    100% {
+      opacity: 0.5;
+      transform: scale(0.8);
+    }
+  }
+    
+  /* Responsiveness */
+  @media screen and (max-width: 768px) {
+    .comment-form {
+      flex-direction: column;
+    }
+    
+    .comment-submit-btn {
+      width: 100%;
+    }
+    
+    /* Adjust gap between stars for smaller screens */
+    .star-rating {
+      gap: 0.15rem; /* Smaller gap between stars on mobile */
+    }
+  }
+
+  

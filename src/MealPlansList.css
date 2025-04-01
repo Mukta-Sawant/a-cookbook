@@ -1,0 +1,157 @@
+/* src/MealPlansList.css
+.meal-plans-container {
+  max-width: 1200px;
+  margin: 6rem auto 2rem auto;
+  padding: 0 1rem;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+}
+
+.meal-plans-container h1 {
+  color: #552b5b;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.create-plan-form {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.create-plan-form h2 {
+  color: #552b5b;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.create-plan-btn {
+  background-color: #f4901d;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.create-plan-btn:hover {
+  background-color: #552b5b;
+}
+
+.meal-plans-list h2 {
+  color: #552b5b;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.plans-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.meal-plan-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  transition: transform 0.3s;
+}
+
+.meal-plan-card:hover {
+  transform: translateY(-5px);
+}
+
+.meal-plan-card h3 {
+  color: #552b5b;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.date-range {
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.view-plan-btn {
+  display: inline-block;
+  background-color: #f4901d;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.view-plan-btn:hover {
+  background-color: #552b5b;
+}
+
+/* Tablet Styles */
+/* @media screen and (max-width: 1024px) {
+  .plans-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+} */
+
+/* Mobile Styles */
+/* @media screen and (max-width: 768px) {
+  .meal-plans-container {
+    margin-top: 5rem;
+  }
+  
+  .plans-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .create-plan-form {
+    padding: 1rem;
+  }
+  
+  .create-plan-btn {
+    width: 100%;
+  }
+} */
+
+/* Small Mobile Styles */
+/* @media screen and (max-width: 480px) {
+  .meal-plans-container {
+    padding: 0 0.5rem;
+  }
+  
+  .create-plan-form h2, 
+  .meal-plans-list h2 {
+    font-size: 1.3rem;
+  }
+  
+  .form-input {
+    padding: 0.6rem;
+  }
+  
+  .meal-plan-card {
+    padding: 1rem;
+  }
+}  */
