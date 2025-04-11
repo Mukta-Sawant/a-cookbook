@@ -34,7 +34,7 @@ const CommunityRecipeItem = ({ recipe }) => {
     localStorage.setItem('username', username);
 
     // Connect to socket.io server
-    const newSocket = io('http://localhost:5001', {
+    const newSocket = io(window.location.origin, {
       reconnection: true,
       reconnectionAttempts: 5,
       reconnectionDelay: 1000,
