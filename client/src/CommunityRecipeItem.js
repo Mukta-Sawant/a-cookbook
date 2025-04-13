@@ -41,6 +41,14 @@ const CommunityRecipeItem = ({ recipe }) => {
       timeout: 20000
     });
 
+    // for testing purposes on localhost
+    // const newSocket = io('http://localhost:5000', {
+    //   reconnection: true,
+    //   reconnectionAttempts: 5,
+    //   reconnectionDelay: 1000,
+    //   timeout: 20000
+    // });
+
     newSocket.on('connect', () => {
       console.log('Socket connected for recipe community features');
       setIsConnected(true); // Mark socket as connected

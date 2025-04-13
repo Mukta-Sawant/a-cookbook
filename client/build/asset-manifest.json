@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.11c20958.css",
+    "main.js": "/static/js/main.597209ea.js",
+    "static/js/453.70b78360.chunk.js": "/static/js/453.70b78360.chunk.js",
+    "static/media/lukas-blazek-f-TWhXOrLiU-unsplash.jpg": "/static/media/lukas-blazek-f-TWhXOrLiU-unsplash.e9429b2ac59147b431ed.jpg",
+    "index.html": "/index.html",
+    "main.11c20958.css.map": "/static/css/main.11c20958.css.map",
+    "main.597209ea.js.map": "/static/js/main.597209ea.js.map",
+    "453.70b78360.chunk.js.map": "/static/js/453.70b78360.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.11c20958.css",
+    "static/js/main.597209ea.js"
+  ]
+}
